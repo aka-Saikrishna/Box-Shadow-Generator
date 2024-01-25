@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Box Shadow Generator | Learning Web</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="result">
+        <div id="preview"></div>
+      </div>
+      <div class="settings">
+        <div class="range-wrapper">
+          <label for="x-shadow">Offset X :</label>
+          <input type="range" id="x-shadow" min="-100" max="100" value="10" />
+        </div>
+        <div class="range-wrapper">
+          <label for="y-shadow">Offset Y :</label>
+          <input type="range" id="y-shadow" min="-100" max="100" value="10" />
+        </div>
+        <div class="range-wrapper">
+          <label for="blur-radius">Blur Radius :</label>
+          <input type="range" id="blur-radius" min="0" max="100" value="17" />
+        </div>
+        <div class="range-wrapper">
+          <label for="spread-radius">Spread Radius :</label>
+          <input type="range" id="spread-radius" min="-50" max="50" value="0" />
+        </div>
+        <div class="range-wrapper">
+          <label for="border-radius">Border Radius :</label>
+          <input type="range" id="border-radius" min="0" max="100" step="1" value="40" />
+        </div>
+        <div class="range-wrapper">
+          <label for="shadow-opacity">Shadow Opacity :</label>
+          <input type="range" id="shadow-opacity" min="0" max="1" step="0.1" value="0.5" />
+        </div>
+
+
+        <div class="input-wrapper">
+            <label for="inset-shadow">Inset Shadow :</label>
+            <input type="checkbox"  id="inset-shadow">
+        </div>
+
+        <div id="color-wrapper">
+            <label for="shadow-color">Shadow Color :</label>
+            <input type="color"  id="shadow-color">
+        </div>
+        <div id="preview-color-wrapper">
+            <label for="preview-color"> Color :</label>
+            <input type="color"  id="preview-color">
+        </div>
+      </div>
+
+      <div class="code-container">
+        <textarea id="styles"  rows="3"></textarea>
+        <button id="copy-styles" onclick="copyStyles()">Copy Styles</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
